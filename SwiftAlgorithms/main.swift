@@ -8,8 +8,8 @@
 
 import Foundation
 
-let floydTests = FloydWarshallTest()
-floydTests.run()
+let bubbleSortTest = BubbleSortTests()
+bubbleSortTest.run()
 
 
 

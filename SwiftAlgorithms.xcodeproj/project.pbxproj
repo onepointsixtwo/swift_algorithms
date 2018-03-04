@@ -12,6 +12,8 @@
 		781987FA203F132400A54A73 /* DijkstraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781987F9203F132400A54A73 /* DijkstraTests.swift */; };
 		781987FD203F22DF00A54A73 /* FloydWarshallAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781987FC203F22DF00A54A73 /* FloydWarshallAlgorithm.swift */; };
 		781987FF203F260600A54A73 /* FloydWarshallTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781987FE203F260600A54A73 /* FloydWarshallTest.swift */; };
+		789341A4204C353900D674CF /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789341A3204C353900D674CF /* BubbleSort.swift */; };
+		789341A6204C354700D674CF /* BubbleSortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789341A5204C354700D674CF /* BubbleSortTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +35,8 @@
 		781987F9203F132400A54A73 /* DijkstraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DijkstraTests.swift; sourceTree = "<group>"; };
 		781987FC203F22DF00A54A73 /* FloydWarshallAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloydWarshallAlgorithm.swift; sourceTree = "<group>"; };
 		781987FE203F260600A54A73 /* FloydWarshallTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloydWarshallTest.swift; sourceTree = "<group>"; };
+		789341A3204C353900D674CF /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
+		789341A5204C354700D674CF /* BubbleSortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSortTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 		781987ED203E077C00A54A73 /* SwiftAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
+				789341A1204C351C00D674CF /* Sorting */,
 				781987F8203F130B00A54A73 /* Graphs */,
 				781987EE203E077C00A54A73 /* main.swift */,
 			);
@@ -96,6 +101,23 @@
 				781987FE203F260600A54A73 /* FloydWarshallTest.swift */,
 			);
 			path = "Floyd-Warshall";
+			sourceTree = "<group>";
+		};
+		789341A1204C351C00D674CF /* Sorting */ = {
+			isa = PBXGroup;
+			children = (
+				789341A2204C352600D674CF /* Bubble */,
+			);
+			path = Sorting;
+			sourceTree = "<group>";
+		};
+		789341A2204C352600D674CF /* Bubble */ = {
+			isa = PBXGroup;
+			children = (
+				789341A3204C353900D674CF /* BubbleSort.swift */,
+				789341A5204C354700D674CF /* BubbleSortTest.swift */,
+			);
+			path = Bubble;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +182,9 @@
 				781987FF203F260600A54A73 /* FloydWarshallTest.swift in Sources */,
 				781987EF203E077C00A54A73 /* main.swift in Sources */,
 				781987FD203F22DF00A54A73 /* FloydWarshallAlgorithm.swift in Sources */,
+				789341A6204C354700D674CF /* BubbleSortTest.swift in Sources */,
 				781987F6203E079D00A54A73 /* DijkstraAlgorithm.swift in Sources */,
+				789341A4204C353900D674CF /* BubbleSort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
