@@ -9,18 +9,12 @@
 import Foundation
 
 
-class BubbleSort<T: Comparable> {
+class BubbleSort<T: Comparable>: BaseSorting<T> {
 
-    private var unsortedList: [T]
-
-    init(_ unsortedList: [T]) {
-        self.unsortedList = unsortedList
-    }
-
-    func run() -> [T] {
+    override func sort() -> [T] {
         var swapsPerformed = 1
         // We want to take an element and the one after, so we want to loop to one less than the array count
-        let iterations = unsortedList.count - 1
+        let iterations = array.count - 1
 
         // If there were any swaps performed we are not yet in order
         while (swapsPerformed > 0) {
@@ -31,17 +25,17 @@ class BubbleSort<T: Comparable> {
             // Go through and swap any elements which are in the wrong order compared to the element next to them
             // Whenever a swap is performed, increment the value of swaps performed
             for index in 0..<iterations {
-                let thisItem = unsortedList[index]
-                let nextItem = unsortedList[index + 1]
+                let thisItem = array[index]
+                let nextItem = array[index + 1]
 
                 if (thisItem > nextItem) {
                     swapsPerformed += 1
 
-                    unsortedList[index] = nextItem
-                    unsortedList[index + 1] = thisItem
+                    array[index] = nextItem
+                    array[index + 1] = thisItem
                 }
             }
         }
-        return unsortedList
+        return array
     }
 }

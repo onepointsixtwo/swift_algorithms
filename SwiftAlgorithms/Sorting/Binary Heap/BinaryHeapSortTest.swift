@@ -1,14 +1,14 @@
 //
-//  QuickSortTest.swift
+//  BinaryHeapSortTest.swift
 //  SwiftAlgorithms
 //
-//  Created by Kartupelis, John on 21/03/2018.
+//  Created by Kartupelis, John on 24/03/2018.
 //  Copyright © 2018 Kartupelis, John. All rights reserved.
 //
 
 import Foundation
 
-class QuickSortTest {
+class BinaryHeapSortTest {
 
     func run() {
         var unsortedArray = [Int]()
@@ -17,7 +17,7 @@ class QuickSortTest {
         }
 
         let sortedArray = unsortedArray.sorted()
-        let ourQuicksortedArray = QuickSort(unsortedArray).sort()
+        let ourQuicksortedArray = BinaryHeapSort(unsortedArray).sort()
         assert(sortedArray == ourQuicksortedArray, "Our quicksorted array should be the same as the system sorted array")
         NSLog("Successfully performed quicksort")
     }

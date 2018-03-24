@@ -18,7 +18,7 @@ class MergeSortTest {
         }
 
         let sortedArray = unsortedArray.sorted()
-        let ourQuicksortedArray = MergeSort(unsortedArray).run()
+        let ourQuicksortedArray = MergeSort(unsortedArray).sort()
         assert(sortedArray == ourQuicksortedArray, "Our mergesorted array should be the same as the system sorted array")
         NSLog("Successfully performed mergesort")
     }

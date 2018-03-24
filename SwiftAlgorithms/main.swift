@@ -18,7 +18,10 @@ timeTest {
     MergeSortTest().run()
 }
 
-
+timeTest {
+    NSLog("Running Heapsort")
+    BinaryHeapSortTest().run()
+}
 
 
 let tree = BinaryTree(root: BinaryTreeNode(ID: 1))

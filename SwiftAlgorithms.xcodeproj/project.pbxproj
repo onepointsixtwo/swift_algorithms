@@ -11,6 +11,9 @@
 		78166FEA2062802F004AAE52 /* QuickSortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78166FE92062802F004AAE52 /* QuickSortTest.swift */; };
 		78166FED20628D52004AAE52 /* Timing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78166FEC20628D52004AAE52 /* Timing.swift */; };
 		78166FF12062B6D5004AAE52 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78166FF02062B6D5004AAE52 /* BinaryTree.swift */; };
+		78166FF520667F4A004AAE52 /* BinaryHeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78166FF420667F4A004AAE52 /* BinaryHeapSort.swift */; };
+		78166FF720667F56004AAE52 /* BinaryHeapSortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78166FF620667F56004AAE52 /* BinaryHeapSortTest.swift */; };
+		78166FFA20667FF9004AAE52 /* BaseSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78166FF920667FF9004AAE52 /* BaseSorting.swift */; };
 		781987EF203E077C00A54A73 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781987EE203E077C00A54A73 /* main.swift */; };
 		781987F6203E079D00A54A73 /* DijkstraAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781987F5203E079D00A54A73 /* DijkstraAlgorithm.swift */; };
 		781987FA203F132400A54A73 /* DijkstraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781987F9203F132400A54A73 /* DijkstraTests.swift */; };
@@ -39,6 +42,9 @@
 		78166FE92062802F004AAE52 /* QuickSortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSortTest.swift; sourceTree = "<group>"; };
 		78166FEC20628D52004AAE52 /* Timing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timing.swift; sourceTree = "<group>"; };
 		78166FF02062B6D5004AAE52 /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
+		78166FF420667F4A004AAE52 /* BinaryHeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryHeapSort.swift; sourceTree = "<group>"; };
+		78166FF620667F56004AAE52 /* BinaryHeapSortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryHeapSortTest.swift; sourceTree = "<group>"; };
+		78166FF920667FF9004AAE52 /* BaseSorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSorting.swift; sourceTree = "<group>"; };
 		781987EB203E077C00A54A73 /* SwiftAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		781987EE203E077C00A54A73 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		781987F5203E079D00A54A73 /* DijkstraAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DijkstraAlgorithm.swift; sourceTree = "<group>"; };
@@ -85,6 +91,23 @@
 				78166FF02062B6D5004AAE52 /* BinaryTree.swift */,
 			);
 			path = "Simple Binary";
+			sourceTree = "<group>";
+		};
+		78166FF320667F2E004AAE52 /* Binary Heap */ = {
+			isa = PBXGroup;
+			children = (
+				78166FF420667F4A004AAE52 /* BinaryHeapSort.swift */,
+				78166FF620667F56004AAE52 /* BinaryHeapSortTest.swift */,
+			);
+			path = "Binary Heap";
+			sourceTree = "<group>";
+		};
+		78166FF820667FD6004AAE52 /* Base Sorting */ = {
+			isa = PBXGroup;
+			children = (
+				78166FF920667FF9004AAE52 /* BaseSorting.swift */,
+			);
+			path = "Base Sorting";
 			sourceTree = "<group>";
 		};
 		781987E2203E077C00A54A73 = {
@@ -145,6 +168,8 @@
 		789341A1204C351C00D674CF /* Sorting */ = {
 			isa = PBXGroup;
 			children = (
+				78166FF820667FD6004AAE52 /* Base Sorting */,
+				78166FF320667F2E004AAE52 /* Binary Heap */,
 				78166FE620628011004AAE52 /* Quick */,
 				789341A7204D30F400D674CF /* Merge */,
 				789341A2204C352600D674CF /* Bubble */,
@@ -242,12 +267,15 @@
 				789341A9204D310400D674CF /* MergeSort.swift in Sources */,
 				781987EF203E077C00A54A73 /* main.swift in Sources */,
 				781987FD203F22DF00A54A73 /* FloydWarshallAlgorithm.swift in Sources */,
+				78166FF520667F4A004AAE52 /* BinaryHeapSort.swift in Sources */,
 				789341A6204C354700D674CF /* BubbleSortTest.swift in Sources */,
 				78166FED20628D52004AAE52 /* Timing.swift in Sources */,
 				781987F6203E079D00A54A73 /* DijkstraAlgorithm.swift in Sources */,
 				78166FF12062B6D5004AAE52 /* BinaryTree.swift in Sources */,
 				789341AB204D311100D674CF /* MergeSortTest.swift in Sources */,
 				789341A4204C353900D674CF /* BubbleSort.swift in Sources */,
+				78166FFA20667FF9004AAE52 /* BaseSorting.swift in Sources */,
+				78166FF720667F56004AAE52 /* BinaryHeapSortTest.swift in Sources */,
 				78166FEA2062802F004AAE52 /* QuickSortTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

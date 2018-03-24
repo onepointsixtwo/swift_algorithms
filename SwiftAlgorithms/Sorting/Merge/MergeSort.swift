@@ -9,17 +9,11 @@
 import Foundation
 
 
-class MergeSort<T: Comparable> {
+class MergeSort<T: Comparable>: BaseSorting<T> {
 
-    var unsortedList: [T]
-
-    init(_ unsortedList: [T]) {
-        self.unsortedList = unsortedList
-    }
-
-    func run() -> [T] {
-        mergeSort(leftIndex: 0, rightIndex: unsortedList.count - 1)
-        return unsortedList
+    override func sort() -> [T] {
+        mergeSort(leftIndex: 0, rightIndex: array.count - 1)
+        return array
     }
 
     private func mergeSort(leftIndex: Int, rightIndex: Int) {
@@ -42,8 +36,8 @@ class MergeSort<T: Comparable> {
     private func merge(leftIndex: Int, middleIndex: Int, rightIndex: Int) {
 
         // Take the sub arrays from the main list by using subscripted arrays (array slices technically)
-        let subArrayLeft = Array(unsortedList[leftIndex...middleIndex])
-        let subArrayRight = Array(unsortedList[(middleIndex + 1)...rightIndex])
+        let subArrayLeft = Array(array[leftIndex...middleIndex])
+        let subArrayRight = Array(array[(middleIndex + 1)...rightIndex])
 
         // Get the highest indexes in both of the sub arrays
         let highestIndexLeft = subArrayLeft.count - 1
@@ -84,7 +78,7 @@ class MergeSort<T: Comparable> {
         // Finally, we copy the temp left and right combined array back into the original array
         var tmpIndex = 0
         for index in leftIndex...rightIndex {
-            unsortedList[index] = tempLeftAndRightCombinedArray[tmpIndex]
+            array[index] = tempLeftAndRightCombinedArray[tmpIndex]
             tmpIndex += 1
         }
     }

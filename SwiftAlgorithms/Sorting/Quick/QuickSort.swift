@@ -8,14 +8,9 @@
 
 import Foundation
 
-class QuickSort<T: Comparable> {
-    var array: [T]
+class QuickSort<T: Comparable>: BaseSorting<T> {
 
-    init(_ array: [T]) {
-        self.array = array
-    }
-
-    func run() -> [T] {
+    override func sort() -> [T] {
         quickSort(lowIndex: 0, highIndex: array.count - 1)
         return array
     }

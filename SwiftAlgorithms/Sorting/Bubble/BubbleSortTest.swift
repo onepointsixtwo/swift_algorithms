@@ -18,7 +18,7 @@ class BubbleSortTest {
         }
 
         let sortedArray = unsortedArray.sorted()
-        let ourQuicksortedArray = BubbleSort(unsortedArray).run()
+        let ourQuicksortedArray = BubbleSort(unsortedArray).sort()
         assert(sortedArray == ourQuicksortedArray, "Our bubblesorted array should be the same as the system sorted array")
         NSLog("Successfully performed bubblesort")
     }
