@@ -1,15 +1,15 @@
 //
-//  BubbleSortTest.swift
+//  MergeSortTest.swift
 //  SwiftAlgorithms
 //
-//  Created by Kartupelis, John on 04/03/2018.
+//  Created by Kartupelis, John on 05/03/2018.
 //  Copyright © 2018 Kartupelis, John. All rights reserved.
 //
 
 import Foundation
 
 // Need to add merge sort, quick sort, heap sort! (And make sure you understand them inside out and add notes!)
-class BubbleSortTest {
+class MergeSortTest {
 
     func run() {
         var unsortedArray = [Int]()
@@ -18,8 +18,8 @@ class BubbleSortTest {
         }
 
         let sortedArray = unsortedArray.sorted()
-        let ourQuicksortedArray = BubbleSort(unsortedArray).run()
-        assert(sortedArray == ourQuicksortedArray, "Our bubblesorted array should be the same as the system sorted array")
-        NSLog("Successfully performed bubblesort")
+        let ourQuicksortedArray = MergeSort(unsortedArray).run()
+        assert(sortedArray == ourQuicksortedArray, "Our mergesorted array should be the same as the system sorted array")
+        NSLog("Successfully performed mergesort")
     }
 }
