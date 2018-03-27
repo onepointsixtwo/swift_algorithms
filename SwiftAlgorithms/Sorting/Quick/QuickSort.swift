@@ -10,6 +10,10 @@ import Foundation
 
 class QuickSort<T: Comparable>: BaseSorting<T> {
 
+    override func name() -> String {
+        return "QuickSort"
+    }
+
     override func sort() -> [T] {
         quickSort(lowIndex: 0, highIndex: array.count - 1)
         return array

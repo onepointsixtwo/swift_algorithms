@@ -11,6 +11,10 @@ import Foundation
 
 class BubbleSort<T: Comparable>: BaseSorting<T> {
 
+    override func name() -> String {
+        return "BubbleSort"
+    }
+
     override func sort() -> [T] {
         var swapsPerformed = 1
         // We want to take an element and the one after, so we want to loop to one less than the array count

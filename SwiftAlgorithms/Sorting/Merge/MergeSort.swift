@@ -11,6 +11,10 @@ import Foundation
 
 class MergeSort<T: Comparable>: BaseSorting<T> {
 
+    override func name() -> String {
+        return "MergeSort"
+    }
+
     override func sort() -> [T] {
         mergeSort(leftIndex: 0, rightIndex: array.count - 1)
         return array

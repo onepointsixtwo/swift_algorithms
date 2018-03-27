@@ -8,48 +8,29 @@
 
 import Foundation
 
+let array = [10, 8, 3, 7, 5, 12, 1]
+let heapsort = BinaryHeapSort(array)
+heapsort.sort()
+
+// Create an instance of sorting test (will mean that the same array is sorted by each, giving proper timings)
+let sortingTest = SortingTest()
+
 timeTest {
     NSLog("Running Quicksort")
-    QuickSortTest().run()
+    sortingTest.run(sortingAlgorithmType: QuickSort<Int>.self)
 }
 
 timeTest {
     NSLog("Running Mergesort")
-    MergeSortTest().run()
+    sortingTest.run(sortingAlgorithmType: MergeSort<Int>.self)
 }
 
 timeTest {
     NSLog("Running Heapsort")
-    BinaryHeapSortTest().run()
+    sortingTest.run(sortingAlgorithmType: BinaryHeapSort<Int>.self)
 }
 
-
-let tree = BinaryTree(root: BinaryTreeNode(ID: 1))
-tree.root.right = BinaryTreeNode(ID: 2)
-tree.root.left = BinaryTreeNode(ID: 3)
-tree.root.left?.left = BinaryTreeNode(ID: 4)
-tree.root.left?.right = BinaryTreeNode(ID: 5)
-print("Tree size = \(tree.size())")
-
-let tree2 = BinaryTree(root: BinaryTreeNode(ID: 1))
-tree2.root.right = BinaryTreeNode(ID: 2)
-tree2.root.left = BinaryTreeNode(ID: 3)
-tree2.root.left?.left = BinaryTreeNode(ID: 4)
-tree2.root.left?.right = BinaryTreeNode(ID: 5)
-
-print("Tree depth is \(tree2.getDepth())")
-
-tree2.mirrorTree()
-assert(tree2.root.right?.left?.ID == 5)
-
-let equal = tree2.isEqualToTree(tree: tree)
-if equal {
-    print("Trees are equal")
-} else {
-    print("Trees are not equal")
+timeTest {
+    NSLog("Running BubbleSort")
+    sortingTest.run(sortingAlgorithmType: BubbleSort<Int>.self)
 }
-
-tree2.deleteTree()
-assert(tree2.getDepth() == 1)
-assert(tree2.root.left == nil)
-assert(tree2.root.right == nil)

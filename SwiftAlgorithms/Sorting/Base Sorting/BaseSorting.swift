@@ -12,12 +12,15 @@ class BaseSorting<T: Comparable> {
 
     internal var array: [T]
 
-    init(_ inputArray: [T]) {
+    required init(_ inputArray: [T]) {
         self.array = inputArray
     }
 
     func sort() -> [T] {
         preconditionFailure("run() must be overridden in subclasses of BaseSorting")
-        return array
+    }
+
+    func name() -> String {
+        preconditionFailure("name() must be overridden in subclasses of BaseSorting")
     }
 }
